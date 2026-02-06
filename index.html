@@ -6,155 +6,164 @@
 
 <style>
 body{
-    margin:0;
-    font-family: 'Comic Sans MS', cursive;
-    background: linear-gradient(135deg,#ffd6e8,#fff3b0);
-    text-align:center;
-    overflow-x:hidden;
+  margin:0;
+  font-family:'Comic Sans MS', cursive;
+  background:linear-gradient(135deg,#ffd6e8,#fff3b0);
+  text-align:center;
+  overflow-x:hidden;
 }
 
 .page{
-    display:none;
-    padding:30px;
+  display:none;
+  padding:30px;
 }
 
 .page.active{
-    display:block;
+  display:block;
 }
 
 h1{
-    font-size:42px;
-    color:#ff4d6d;
+  font-size:42px;
+  color:#ff4d6d;
 }
 
 button{
-    padding:15px 35px;
-    font-size:20px;
-    background:#ff4d6d;
-    color:white;
-    border:none;
-    border-radius:40px;
-    cursor:pointer;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  padding:15px 35px;
+  font-size:20px;
+  background:#ff4d6d;
+  color:white;
+  border:none;
+  border-radius:40px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
 button:hover{
-    transform:scale(1.05);
+  transform:scale(1.05);
 }
 
 .sparkle{
-    position:fixed;
-    width:8px;
-    height:8px;
-    background:white;
-    border-radius:50%;
-    animation:spark 3s infinite;
+  position:fixed;
+  width:8px;
+  height:8px;
+  background:white;
+  border-radius:50%;
+  animation:spark 3s infinite;
 }
 
 @keyframes spark{
-    0%{opacity:1; transform:translateY(0);}
-    100%{opacity:0; transform:translateY(-120px);}
+  0%{opacity:1;transform:translateY(0);}
+  100%{opacity:0;transform:translateY(-120px);}
 }
 
 .photos{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
 .photos img{
-    width:160px;
-    height:200px;
-    object-fit:cover;
-    border-radius:20px;
-    margin:10px;
-    border:6px dashed pink;
+  width:160px;
+  height:200px;
+  object-fit:cover;
+  border-radius:20px;
+  margin:10px;
+  border:6px dashed pink;
 }
 
 .msg{
-    max-width:900px;
-    margin:35px auto;
-    background:white;
-    padding:30px;
-    border-radius:25px;
-    font-size:18px;
-    line-height:1.7;
+  max-width:900px;
+  margin:35px auto;
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  font-size:18px;
+  line-height:1.7;
 }
 </style>
 </head>
 
 <body>
-    <audio id="bgMusic" autoplay loop>
+
+<!-- 🎶 BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg">
-    </audio>
+</audio>
 
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
-    <h1>🎉 Happy Birthday Kusummm 🎉</h1>
-    <p>Pretty little princess 👑💗</p>
-    <p>Aaj ka din thoda zyada special hai 😌👇</p>
-    <button onclick="nextPage()">Next ➡️</button>
+  <h1>🎉 Happy Birthday Kusummm 🎉</h1>
+  <p>Pretty little princess 💖✨</p>
+  <p>Aaj ka din thoda zyada special hai 🥹💫</p>
+  <p><i>(Tap anywhere for magic 🎶)</i></p>
+  <button onclick="nextPage()">Next ➡️</button>
 </div>
 
 <!-- PAGE 2 -->
 <div class="page" id="page2">
+  <h1>💖 For My Favourite Human 💖</h1>
 
+  <div class="photos">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+    <img src="photo4.jpg">
+    <img src="photo5.jpg">
+    <img src="photo6.jpg">
+    <img src="photo7.jpg">
+    <img src="photo8.jpg">
+    <img src="photo9.jpg">
+    <img src="photo10.jpg">
+    <img src="photo11.jpg">
+    <img src="photo12.jpg">
+    <img src="photo13.jpg">
+  </div>
 
-    <h1>🐱💖 For My Favourite baunieeee 💖🐱</h1>
+  <div class="msg">
+    <p>
+    Happy Birthday meri Kusummm, meri buniyeeee 💕✨<br>
+    Aaj ka din sirf cake ka nahi hai, aaj ka din uss insaan ka hai<br>
+    jo bina zyada bole bhi meri life ko thoda zyada bright bana deta hai ✨<br><br>
 
-    <div class="photos">
-        <img src="photo1.jpg"><img src="photo2.jpg"><img src="photo3.jpg">
-        <img src="photo4.jpg"><img src="photo5.jpg"><img src="photo6.jpg">
-        <img src="photo7.jpg"><img src="photo8.jpg"><img src="photo9.jpg">
-        <img src="photo10.jpg"><img src="photo11.jpg"><img src="photo12.jpg">
-        <img src="photo13.jpg">
-    </div>
+    Sach bolu toh tuhh meri life mey thodi late aayi,<br>
+    lekin jab se aayi hai na, cheezein apne aap better hone lagi 🥹<br>
+    Tera smile karna, bina reason gussa hona,<br>
+    phir khud hi normal ho jaana — sab kuch alag hi level ka cute hai 💖<br><br>
 
-    <div class="msg">
-        <p>
-        Happy Birthday meri Kusummm, meri baunieeeee 💕🎂  
-        Aaj ka din sirf cake ka nahi hai, aaj ka din uss insan ka hai  
-        jo bina zyada bole bhi meri life ko thoda zyada bright bana deta hai ✨  
-        <br><br>
-        Sach bolu toh tuh meri life mey thodi late aayi,  
-        lekin jab se aayi hai na, cheezein apne aap better hone lagi 😌  
-        Tera smile karna, bina reason gussa hona,  
-        phir khud hi normal ho jaana — sab kuch alag hi level ka cute hai 🐱💖  
-        <br><br>
-        Tuh shayad notice na kare,  
-        lekin tere hone se meri life mey ek alag si warmth aa gayi hai ❤️  
-        Main har din khud ko thoda aur lucky maanta hoon  
-        ki mujhe tuh jaisi insan mili 🫶  
-        <br><br>
-        Aaj ke din bas itna chahta hoon  
-        ki teri sari wishes puri ho,  
-        aur tu hamesha aese hi khush rahe, hasti rahe,  
-        aur thoda sa mujhe bhi apne saath jhelti rahe 😜  
-        <br><br>
-        Happy Birthday once again meri favourite insan 💖✨  
-        </p>
-    </div>
+    Tuhh shayad notice na kare,<br>
+    lekin tere hone se meri life mey ek alag si warmth aa gayi hai ❤️<br>
+    Main har din khud ko thoda aur lucky maanta hoon<br>
+    ki mujhe tuhh jaisi insaan mili 🫶<br><br>
 
+    Aaj ke din bas itna chahta hoon<br>
+    ki teri saari wishes poori ho,<br>
+    aur tu hamesha aise hi khush rahe, hasti rahe,<br>
+    aur thoda sa mujhe bhi apne saath jhelti rahe 😌<br><br>
+
+    Happy Birthday once again meri favourite insaan 💕✨
+    </p>
+  </div>
 </div>
 
 <script>
-    document.addEventListener("click", function () {
-    document.getElementById("bgMusic").play();
+document.addEventListener("click", function () {
+  document.getElementById("bgMusic").play();
+}, { once:true });
+
 function nextPage(){
-    document.getElementById("page1").classList.remove("active");
-    document.getElementById("page2").classList.add("active");
+  document.getElementById("page1").classList.remove("active");
+  document.getElementById("page2").classList.add("active");
 }
 
 for(let i=0;i<45;i++){
-    let s=document.createElement("div");
-    s.className="sparkle";
-    s.style.left=Math.random()*100+"vw";
-    s.style.top=Math.random()*100+"vh";
-    s.style.animationDuration=(2+Math.random()*3)+"s";
-    document.body.appendChild(s);
+  let s=document.createElement("div");
+  s.className="sparkle";
+  s.style.left=Math.random()*100+"vw";
+  s.style.top=Math.random()*100+"vh";
+  s.style.animationDuration=(2+Math.random()*3)+"s";
+  document.body.appendChild(s);
 }
 </script>
 
 </body>
 </html>
-
