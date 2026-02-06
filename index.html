@@ -84,6 +84,9 @@ button:hover{
 </head>
 
 <body>
+    <audio id="bgMusic" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+    </audio>
 
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
@@ -96,11 +99,8 @@ button:hover{
 <!-- PAGE 2 -->
 <div class="page" id="page2">
 
-    <audio autoplay loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
 
-    <h1>🐱💖 For My Favourite Human 💖🐱</h1>
+    <h1>🐱💖 For My Favourite baunieeee 💖🐱</h1>
 
     <div class="photos">
         <img src="photo1.jpg"><img src="photo2.jpg"><img src="photo3.jpg">
@@ -138,6 +138,8 @@ button:hover{
 </div>
 
 <script>
+    document.addEventListener("click", function () {
+    document.getElementById("bgMusic").play();
 function nextPage(){
     document.getElementById("page1").classList.remove("active");
     document.getElementById("page2").classList.add("active");
